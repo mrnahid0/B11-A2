@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.header{
+.header, .main-tag{
     width: 1440px;
     margin: 0 auto;
     font-family: "Quicksand", serif;
@@ -93,6 +93,51 @@
     width: 50%;
     height: 100%;
 }
+/* main tag styles */
+.main-div-container{
+    display: flex;
+}
+.main-tag{
+    gap: 28;
+    background-image: url(../assets/bg.png);
+}
+.main-heading{
+    color: rgba(0, 0, 0, 1);
+    font-size: 46px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.first-div{
+    background-color: rgba(222, 245, 255, 1);
+    box-shadow: gray 2px;
+    border:none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.div-img{
+    margin-top: 52px;
+}
+.main-name{
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.main-paragraph{
+    color: rgba(128, 128, 128, 1);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 33px;
+}
+.anchor{
+    color: rgba(100, 200, 255, 1);
+    text-decoration: none;
+    margin-top: 33px;
+    margin-bottom: 52px;
+}
 /* navbar media quieary */
 @media screen and (max-width: 576px) {
     .nav-name, .list-container, .nav-button{
@@ -109,8 +154,6 @@
         border: 1px solid orange;
     }
     .banner-container{
-        display: flex;
-        flex-direction: column-reverse;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
